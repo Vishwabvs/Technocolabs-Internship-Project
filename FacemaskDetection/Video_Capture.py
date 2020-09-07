@@ -56,12 +56,12 @@ def detect_and_predict(frame, faceNet, maskNet):
     
 
 
-prototxtPath = '/home/vishwa/Documents/COVID Project/Technocolabs-Intern-Project/deploy.prototxt'
-weightsPath = '/home/vishwa/Documents/COVID Project/Technocolabs-Intern-Project/res10_300x300_ssd_iter_140000.caffemodel'
+prototxtPath = '/home/vishwa/Documents/COVID Project/Technocolabs-Internship-Project/FacemaskDetection/deploy.prototxt'
+weightsPath = '/home/vishwa/Documents/COVID Project/Technocolabs-Internship-Project/FacemaskDetection/res10_300x300_ssd_iter_140000.caffemodel'
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
 
-unmasked_dir = '/home/vishwa/Documents/COVID Project/Technocolabs-Intern-Project/Unmasked_Faces'
+unmasked_dir = '/home/vishwa/Documents/COVID Project/Technocolabs-Intern-Project/FacemaskDetection/Unmasked_Faces'
 maskNet = load_model('facefeatures.h5')
 
 #starting video stream

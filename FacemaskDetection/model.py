@@ -17,8 +17,8 @@ import numpy as np
 
 #Specifying Img size and Data Directories
 IMG_SIZE = 224
-train_path = '/home/vishwa/Documents/COVID Project/Technocolabs-Intern-Project/Face Mask Dataset/Train'
-val_path = '/home/vishwa/Documents/COVID Project/Technocolabs-Intern-Project/Face Mask Dataset/Validation'
+train_path = '/home/vishwa/Documents/COVID Project/Technocolabs-Internship-Project/FacemaskDetection/Face Mask Dataset/Train'
+val_path = '/home/vishwa/Documents/COVID Project/Technocolabs-Internship-Project/FacemaskDetection/Face Mask Dataset/Validation'
 
 
 #Initialising VGG16
@@ -63,7 +63,7 @@ r = model.fit_generator(train_set,
 
 #Testing with Validation Model
 test_datagen = ImageDataGenerator(rescale=1./255)
-test_dir = '/home/vishwa/Documents/COVID Project/Technocolabs-Intern-Project/Face Mask Dataset/Test'
+test_dir = '/home/vishwa/Documents/COVID Project/Technocolabs-Internship-Project/FacemaskDetection/Face Mask Dataset/Test'
 
 test_generator = test_datagen.flow_from_directory(
         test_dir,
