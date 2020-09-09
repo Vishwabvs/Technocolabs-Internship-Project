@@ -63,7 +63,7 @@ faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
 
 unmasked_dir = '/home/vishwa/Documents/COVID Project/Technocolabs-Internship-Project/FacemaskDetection/Unmasked_Faces'
-maskNet = load_model('facefeatures.h5')
+maskNet = load_model('mask_detector.model')
 	
  
  
